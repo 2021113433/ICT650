@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #F7CAC9;
+    color: #A9CCCF;
     outline: none;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #F7CAC9;
+    background: #A9CCCF;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -58,7 +58,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #F7CAC9;
+    color: #A9CCCF;
 }
 
 .back-to-top i {
@@ -182,7 +182,7 @@ a:focus {
     width: 100%;
     margin-bottom: 45px;
     padding: 90px 0;
-    background: #F7CAC9;
+    background: #a9cccf;
     overflow: hidden;
 }
 
@@ -227,7 +227,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #F7CAC9;
+    color: #a9cccf;
     background: #343148;
     border-radius: 0;
     transition: .3s;
@@ -305,7 +305,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: #F7CAC9;
+    background: #A9CCCF;
 }
 
 .page-header h2 {
@@ -391,7 +391,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #F7CAC9;
+    color: #A9CCCF;
     background: #343148;
     border-radius: 0;
     transition: .3s;
@@ -399,7 +399,7 @@ a:focus {
 
 .about .about-text .btn:hover {
     color: #343148;
-    background: #F7CAC9;
+    background: #A9CCCF;
 }
 
 @media (max-width: 767.98px) {
