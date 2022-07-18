@@ -458,7 +458,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #F7CAC9;
+    color: #A9CCCF;
     background: #343148;
     border-radius: 0;
     transition: .3s;
@@ -520,14 +520,14 @@ a:focus {
     justify-content: center;
     border-radius: 40px;
     font-size: 16px;
-    color: #F7CAC9;
+    color: #A9CCCF;
     background: #343148;
     opacity: 0;
 }
 
 .team .team-social a:hover {
     color: #343148;
-    background: #F7CAC9;
+    background: #A9CCCF;
 }
 
 
@@ -601,7 +601,7 @@ a:focus {
     font-size: 25px;
     color: #343148;
     margin-bottom: 15px;
-    border: 1px solid #F7CAC9;
+    border: 1px solid #A9CCCF;
     border-radius: 50px;
 }
 
@@ -633,7 +633,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #F7CAC9;
+    color: #A9CCCF;
     background: #343148;
     border-radius: 0;
     transition: .3s;
@@ -641,7 +641,7 @@ a:focus {
 
 .contact .contact-form .btn:hover {
     color: #343148;
-    background: #F7CAC9;
+    background: #A9CCCF;
 }
 
 .contact .help-block ul {
@@ -676,7 +676,7 @@ a:focus {
 
 .footer .footer-info .footer-logo {
     display: inline-block;
-    color: #F7CAC9;
+    color: #A9CCCF;
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
@@ -737,7 +737,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #F7CAC9;
+    color: #A9CCCF;
 }
 
 .footer .copyright {
@@ -766,7 +766,7 @@ a:focus {
 }
 
 .footer .copyright p a:hover {
-    color: #F7CAC9;
+    color: #A9CCCF;
 }
 
 @media (max-width: 767.98px) {
