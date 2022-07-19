@@ -19,47 +19,7 @@
     </head>
 
     <body>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
-            import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
-
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            const firebaseConfig = {
-              apiKey: "AIzaSyBF1z0ZNQfKTNRPET59kS0y4I1p67YuXyQ",
-              authDomain: "hospital-finder-zuhaimu.firebaseapp.com",
-              databaseURL: "https://hospital-finder-zuhaimu-default-rtdb.asia-southeast1.firebasedatabase.app",
-              projectId: "hospital-finder-zuhaimu",
-              storageBucket: "hospital-finder-zuhaimu.appspot.com",
-              messagingSenderId: "442315918046",
-              appId: "1:442315918046:web:a69e0c3a6484c88b81104f"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-
-            const database = ref(getDatabase(app));
-
-            //read data
-            get(child(database, `Users/`)).then((snapshot) => {
-                if (snapshot.exists()) {
-                    console.log(snapshot.val());
-                } else {
-                    console.log("No data available");
-                }
-                }).catch((error) => {
-                console.error(error);
-                });
-
-            function AddItemToTable(name, roll,sec,gen){
-                let trow =  document.create
-            }
-          </script>
-
-
+        
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
@@ -131,11 +91,11 @@
                                 
                             </tr>
                         </thead>
-                        <!-- <tbody id="tbody1">
-                            <script>
+                        <tbody id="tbody">
+                            <script type="module">
                                 var userNo = 0;
                                 function AddItemToTable(name, email, no){
-                                    let trow =  document.createElement("trow");
+                                    let trow =  document.createElement("tr");
                                     let td1 = document.createElement("td");
                                     let td2 = document.createElement("td");
                                     let td3 = document.createElement("td");
@@ -156,16 +116,56 @@
                                     tbody.appendChild(trow);
                                 }
 
+                                function AddAllItemsToTable(Users){
+                                    userNo = 0;
+                                    tbody.innerHTML="";
+                                    Users.forEach(element => {
+                                        AddItemToTable(element.name, element.email, element.no);
+                                    });
+                                }
+
+                                import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+                                import { getDatabase, ref, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
+
+                                // TODO: Add SDKs for Firebase products that you want to use
+                                // https://firebase.google.com/docs/web/setup#available-libraries
+                            
+                                // Your web app's Firebase configuration
+                                const firebaseConfig = {
+                                apiKey: "AIzaSyBF1z0ZNQfKTNRPET59kS0y4I1p67YuXyQ",
+                                authDomain: "hospital-finder-zuhaimu.firebaseapp.com",
+                                databaseURL: "https://hospital-finder-zuhaimu-default-rtdb.asia-southeast1.firebasedatabase.app",
+                                projectId: "hospital-finder-zuhaimu",
+                                storageBucket: "hospital-finder-zuhaimu.appspot.com",
+                                messagingSenderId: "442315918046",
+                                appId: "1:442315918046:web:a69e0c3a6484c88b81104f"
+                                };
+                            
+                                // Initialize Firebase
+                                const app = initializeApp(firebaseConfig);
+
+                                // const database = ref(getDatabase(app));
+
+                                const db = getDatabase();
+
+                                function GetAllDataOnce(){
+                                    const dbRef = ref(db);
+
+                                    get(child(dbRef, "Users"))
+                                    .then((snapshot)=>{
+                                        var Users = [];
+
+                                        snapshot.forEach(childSnapshot => {
+                                            Users.push(childSnapshot.val());
+                                        });
+                                        AddAllItemsToTable(Users);
+                                    });
+                                }
+
+                                window.onload = GetAllDataOnce;
                                 
-                            </script> -->
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                               
-                            </tr>
+                            </script>
+                        
                             </tbody>
                         </table>
                     </div>
