@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042566428856",
+    "project_id": "hospital-finder-zuhaimu-d4772",
+    "storage_bucket": "hospital-finder-zuhaimu-d4772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042566428856:android:8f5fe47a9e33356de85c4d",
+        "android_client_info": {
+          "package_name": "com.example.hospitalfinderzuhaimu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042566428856-gqge685o8fb7knkhb8en3affkmk254j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2gTHWaQKVHqGeS0-mUCLDkDiViH9XBlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042566428856-gqge685o8fb7knkhb8en3affkmk254j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
